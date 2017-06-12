@@ -34,19 +34,7 @@
 		</property>
 		<!-- 读取数据源 -->
 		<property name="dataSource" ref="datasource"></property>
-		<!-- 读取映射文件 -->
-		<property name="mapperLocations">
-				<list>
-						<value>cn/appinfodb/dao/BackendUser/BackendUserMapper.xml</value>
-						<value>cn/appinfodb/dao/BackendUser/CategoryMapper.xml</value>
-						<value>cn/appinfodb/dao/BackendUser/DataDictionaryMapper.xml</value>
-						<value>cn/appinfodb/dao/BackendUser/devUserMapper.xml</value>
-						<value>cn/appinfodb/dao/BackendUser/InfoMapper.xml</value>
-						<value>cn/appinfodb/dao/BackendUser/PromotionMapper.xml</value>
-						<value>cn/appinfodb/dao/BackendUser/VersionMapper.xml</value>
-						
-				</list>
-		</property>
+		
 </bean>
 <!-- 自动扫描映射接口 -->
 <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">

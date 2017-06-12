@@ -1,5 +1,5 @@
 package cn.appinfodb.dao.devUser;
 
-public interface devUserMapper {
+public interface DevUserMapper {
 
 }
