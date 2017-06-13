@@ -9,7 +9,7 @@ public class Category implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = -7187009828703274172L;
-	private BigInteger id;
+	private int id;
 	/**
 	 * 分类编码
 	 */
@@ -40,7 +40,7 @@ public class Category implements Serializable {
 	private Date modifyDate;
 	
 	public Category(){}
-	public Category(BigInteger id, String categoryCode, String categoryName,
+	public Category(int id, String categoryCode, String categoryName,
 			BigInteger parentId, BigInteger createdBy, Date creationTime,
 			BigInteger modifyBy, Date modifyDate) {
 		super();
@@ -53,10 +53,10 @@ public class Category implements Serializable {
 		this.modifyBy = modifyBy;
 		this.modifyDate = modifyDate;
 	}
-	public BigInteger getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(BigInteger id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getCategoryCode() {

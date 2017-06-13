@@ -1,5 +1,13 @@
 package cn.appinfodb.service.BackendUser;
 
-public interface BackendUserService {
+import cn.appinfodb.pojo.BackendUser;
 
+public interface BackendUserService {
+/**
+ * 用户登录
+ * @param userCode
+ * @return
+ */
+	public BackendUser fountBackendUserBy(String userCode,String userPassword);
+	
 }

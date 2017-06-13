@@ -3,6 +3,8 @@ package cn.appinfodb.pojo;
 import java.io.Serializable;
 import java.sql.Date;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 public class BackendUser implements Serializable {
 	/**
 	 * 
@@ -13,8 +15,10 @@ public class BackendUser implements Serializable {
 	private String userName;//用户名称
 	private int userType;//用户角色类型（来源于数据字典表，分为：超管、财务、市场、运营、销售）
 	private int createdBy;//创建者（来源于backend_user用户表的用户id）
+
 	private Date creationDate;//创建时间
 	private int modifyBy;//更新者（来源于backend_user用户表的用户id)
+
 	private Date modifyDate;//最新更新时间
 	private String userPassword;//用户密码
 	

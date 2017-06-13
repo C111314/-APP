@@ -12,7 +12,7 @@
  
  <!-- MVC注解 -->
 <context:component-scan base-package="cn.appinfodb.controller"></context:component-scan>	
-			
+		
 <!--  自动映射驱动  全局设置，解决中文乱码-->
 <mvc:annotation-driven>
 		<mvc:message-converters>
@@ -37,7 +37,7 @@
 <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
 		<property name="exceptionMappings">
 			<props>
-				<prop key="java.lang.RuntimeException">login</prop>
+				<prop key="java.lang.RuntimeException">backendlogin</prop>
 			</props>
 		</property>
 </bean>

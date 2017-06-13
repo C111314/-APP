@@ -12,6 +12,9 @@
  		          								 http://www.springframework.org/schema/tx/spring-tx.xsd 
 												 http://www.springframework.org/schema/aop 
 												 http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+<context:component-scan base-package="cn.appinfodb.service"></context:component-scan>
+
 <!-- 读取properties文件 -->
 <!-- <context:property-placeholder location="data.properties"/> -->
 <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -41,5 +44,4 @@
 		<property name="basePackage" value="cn.appinfodb.dao"></property>
 </bean>
 <!-- 注解 -->
-<context:component-scan base-package="cn.appinfodb.service"></context:component-scan>				
 </beans>
