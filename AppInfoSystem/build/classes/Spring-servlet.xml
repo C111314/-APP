@@ -37,7 +37,11 @@
 <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
 		<property name="exceptionMappings">
 			<props>
+<<<<<<< HEAD
 				<prop key="java.lang.RuntimeException">backendlogin</prop>
+=======
+				<prop key="java.lang.RuntimeException">devlogin</prop>
+>>>>>>> 3465bee2703f1a203b4291b61f51e9d33789ddae
 			</props>
 		</property>
 </bean>

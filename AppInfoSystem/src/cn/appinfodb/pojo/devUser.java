@@ -2,7 +2,7 @@ package cn.appinfodb.pojo;
 
 import java.io.Serializable;
 import java.util.Date;
-public class devUser implements Serializable {
+public class DevUser implements Serializable {
 		/**
 	 * 
 	 */
@@ -17,9 +17,9 @@ public class devUser implements Serializable {
 		private Date creationDate;//创建时间
 		private int modifyBy;//更新者（来源于backend_user用户表的用户id）
 		private Date modifyDate;//最新更新时间
-		public devUser(){}
+		public DevUser(){}
 		
-		public devUser(int id, String devCode, String devName,
+		public DevUser(int id, String devCode, String devName,
 				String devPassword, String devEmail, String devInfo,
 				int createdBy, Date creationDate, int modifyBy, Date modifyDate) {
 			super();

@@ -35,6 +35,7 @@ public class Info implements Serializable {
 	private String logoPicPath;//LOGO图片url路径
 	private String logoLocPath;//LOGO图片的服务器存储路径
 	private BigInteger versionId;//最新的版本id
+<<<<<<< HEAD
 	
 	/*private CategoryMapper categoryMapper;
 	private DataDictionary dataDictionary;
@@ -48,12 +49,54 @@ public class Info implements Serializable {
 	private String versionNo;
 	
 	
+=======
+	private DataDictionary dataDictionary;
+	private Category category;
+	
+	private String versionNo;
+	private String valueName;
+	private String flatformName;
+	private String statusName;
+	private String categoryName;
+	private String categoryLevel1Name;
+	private String categoryLevel2Name;
+	private String categoryLevel3Name;
+
+	
+	public String getVersionNo() {
+		return versionNo;
+	}
+	public void setVersionNo(String versionNo) {
+		this.versionNo = versionNo;
+	}
+	public String getValueName() {
+		return valueName;
+	}
+	public void setValueName(String valueName) {
+		this.valueName = valueName;
+	}
+>>>>>>> 3465bee2703f1a203b4291b61f51e9d33789ddae
 	public String getFlatformName() {
 		return flatformName;
 	}
 	public void setFlatformName(String flatformName) {
 		this.flatformName = flatformName;
 	}
+<<<<<<< HEAD
+=======
+	public String getStatusName() {
+		return statusName;
+	}
+	public void setStatusName(String statusName) {
+		this.statusName = statusName;
+	}
+	public String getCategoryName() {
+		return categoryName;
+	}
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
+>>>>>>> 3465bee2703f1a203b4291b61f51e9d33789ddae
 	public String getCategoryLevel1Name() {
 		return categoryLevel1Name;
 	}
@@ -72,6 +115,7 @@ public class Info implements Serializable {
 	public void setCategoryLevel3Name(String categoryLevel3Name) {
 		this.categoryLevel3Name = categoryLevel3Name;
 	}
+<<<<<<< HEAD
 	public String getStatusName() {
 		return statusName;
 	}
@@ -83,6 +127,19 @@ public class Info implements Serializable {
 	}
 	public void setVersionNo(String versionNo) {
 		this.versionNo = versionNo;
+=======
+	public Category getCategory() {
+		return category;
+	}
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+	public DataDictionary getDataDictionary() {
+		return dataDictionary;
+	}
+	public void setDataDictionary(DataDictionary dataDictionary) {
+		this.dataDictionary = dataDictionary;
+>>>>>>> 3465bee2703f1a203b4291b61f51e9d33789ddae
 	}
 	public Info(){}
 	public Info(BigInteger id, String softwareName, String aPKName,
