@@ -1,5 +1,11 @@
 package cn.appinfodb.service.devUser;
 
-public interface devUserService {
+import cn.appinfodb.pojo.DevUser;
 
+
+
+public interface DevUserService {
+
+	public DevUser login(String devCode,String devPassword);
+	
 }
