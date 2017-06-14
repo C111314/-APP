@@ -4,7 +4,7 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.appinfodb.dao.Info.InfoMapper">
-<<<<<<< HEAD
+
 
 <select id="selectInfo" resultMap="rm">
 SELECT app_info.id AS id,
@@ -66,7 +66,7 @@ SELECT count(1) FROM app_info
 </select>
 
 
-=======
+
 	<select id="getInfo" resultType="Info">
 		SELECT appinfodb.app_info.id AS id,
 		softwareName,APKName,softwareSize,
@@ -148,5 +148,5 @@ SELECT count(1) FROM app_info
 		</association>
 	</resultMap>
  -->
->>>>>>> 3465bee2703f1a203b4291b61f51e9d33789ddae
+
 </mapper>

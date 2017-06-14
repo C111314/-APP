@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.math.BigInteger;
 import java.sql.Date;
 
-import cn.appinfodb.dao.Category.CategoryMapper;
 
 public class Info implements Serializable {
 	/**
@@ -35,21 +34,15 @@ public class Info implements Serializable {
 	private String logoPicPath;//LOGO图片url路径
 	private String logoLocPath;//LOGO图片的服务器存储路径
 	private BigInteger versionId;//最新的版本id
-<<<<<<< HEAD
+
 	
 	/*private CategoryMapper categoryMapper;
 	private DataDictionary dataDictionary;
 	private Version version;*/
 	
-	private String flatformName;
-	private String categoryLevel1Name;
-	private String categoryLevel2Name;
-	private String categoryLevel3Name;
-	private String statusName;
-	private String versionNo;
 	
 	
-=======
+
 	private DataDictionary dataDictionary;
 	private Category category;
 	
@@ -61,122 +54,6 @@ public class Info implements Serializable {
 	private String categoryLevel1Name;
 	private String categoryLevel2Name;
 	private String categoryLevel3Name;
-
-	
-	public String getVersionNo() {
-		return versionNo;
-	}
-	public void setVersionNo(String versionNo) {
-		this.versionNo = versionNo;
-	}
-	public String getValueName() {
-		return valueName;
-	}
-	public void setValueName(String valueName) {
-		this.valueName = valueName;
-	}
->>>>>>> 3465bee2703f1a203b4291b61f51e9d33789ddae
-	public String getFlatformName() {
-		return flatformName;
-	}
-	public void setFlatformName(String flatformName) {
-		this.flatformName = flatformName;
-	}
-<<<<<<< HEAD
-=======
-	public String getStatusName() {
-		return statusName;
-	}
-	public void setStatusName(String statusName) {
-		this.statusName = statusName;
-	}
-	public String getCategoryName() {
-		return categoryName;
-	}
-	public void setCategoryName(String categoryName) {
-		this.categoryName = categoryName;
-	}
->>>>>>> 3465bee2703f1a203b4291b61f51e9d33789ddae
-	public String getCategoryLevel1Name() {
-		return categoryLevel1Name;
-	}
-	public void setCategoryLevel1Name(String categoryLevel1Name) {
-		this.categoryLevel1Name = categoryLevel1Name;
-	}
-	public String getCategoryLevel2Name() {
-		return categoryLevel2Name;
-	}
-	public void setCategoryLevel2Name(String categoryLevel2Name) {
-		this.categoryLevel2Name = categoryLevel2Name;
-	}
-	public String getCategoryLevel3Name() {
-		return categoryLevel3Name;
-	}
-	public void setCategoryLevel3Name(String categoryLevel3Name) {
-		this.categoryLevel3Name = categoryLevel3Name;
-	}
-<<<<<<< HEAD
-	public String getStatusName() {
-		return statusName;
-	}
-	public void setStatusName(String statusName) {
-		this.statusName = statusName;
-	}
-	public String getVersionNo() {
-		return versionNo;
-	}
-	public void setVersionNo(String versionNo) {
-		this.versionNo = versionNo;
-=======
-	public Category getCategory() {
-		return category;
-	}
-	public void setCategory(Category category) {
-		this.category = category;
-	}
-	public DataDictionary getDataDictionary() {
-		return dataDictionary;
-	}
-	public void setDataDictionary(DataDictionary dataDictionary) {
-		this.dataDictionary = dataDictionary;
->>>>>>> 3465bee2703f1a203b4291b61f51e9d33789ddae
-	}
-	public Info(){}
-	public Info(BigInteger id, String softwareName, String aPKName,
-			String supportROM, String interfaceLanguage, String softwareSize,
-			Date updateDate, BigInteger devId, String appInfo,
-			BigInteger status, Date onSaleDate, Date offSaleDate,
-			BigInteger flatformId, BigInteger categoryLevel3,
-			BigInteger downloads, BigInteger createdBy, Date creationDate,
-			BigInteger modifyBy, Date modifyDate, BigInteger categoryLevel1,
-			BigInteger categoryLevel2, String logoPicPath, String logoLocPath,
-			BigInteger versionId) {
-		super();
-		this.id = id;
-		this.softwareName = softwareName;
-		APKName = aPKName;
-		this.supportROM = supportROM;
-		this.interfaceLanguage = interfaceLanguage;
-		this.softwareSize = softwareSize;
-		this.updateDate = updateDate;
-		this.devId = devId;
-		this.appInfo = appInfo;
-		this.status = status;
-		this.onSaleDate = onSaleDate;
-		this.offSaleDate = offSaleDate;
-		this.flatformId = flatformId;
-		this.categoryLevel3 = categoryLevel3;
-		this.downloads = downloads;
-		this.createdBy = createdBy;
-		this.creationDate = creationDate;
-		this.modifyBy = modifyBy;
-		this.modifyDate = modifyDate;
-		this.categoryLevel1 = categoryLevel1;
-		this.categoryLevel2 = categoryLevel2;
-		this.logoPicPath = logoPicPath;
-		this.logoLocPath = logoLocPath;
-		this.versionId = versionId;
-	}
 	public BigInteger getId() {
 		return id;
 	}
@@ -321,5 +198,117 @@ public class Info implements Serializable {
 	public void setVersionId(BigInteger versionId) {
 		this.versionId = versionId;
 	}
+	public DataDictionary getDataDictionary() {
+		return dataDictionary;
+	}
+	public void setDataDictionary(DataDictionary dataDictionary) {
+		this.dataDictionary = dataDictionary;
+	}
+	public Category getCategory() {
+		return category;
+	}
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+	public String getVersionNo() {
+		return versionNo;
+	}
+	public void setVersionNo(String versionNo) {
+		this.versionNo = versionNo;
+	}
+	public String getValueName() {
+		return valueName;
+	}
+	public void setValueName(String valueName) {
+		this.valueName = valueName;
+	}
+	public String getFlatformName() {
+		return flatformName;
+	}
+	public void setFlatformName(String flatformName) {
+		this.flatformName = flatformName;
+	}
+	public String getStatusName() {
+		return statusName;
+	}
+	public void setStatusName(String statusName) {
+		this.statusName = statusName;
+	}
+	public String getCategoryName() {
+		return categoryName;
+	}
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
+	public String getCategoryLevel1Name() {
+		return categoryLevel1Name;
+	}
+	public void setCategoryLevel1Name(String categoryLevel1Name) {
+		this.categoryLevel1Name = categoryLevel1Name;
+	}
+	public String getCategoryLevel2Name() {
+		return categoryLevel2Name;
+	}
+	public void setCategoryLevel2Name(String categoryLevel2Name) {
+		this.categoryLevel2Name = categoryLevel2Name;
+	}
+	public String getCategoryLevel3Name() {
+		return categoryLevel3Name;
+	}
+	public void setCategoryLevel3Name(String categoryLevel3Name) {
+		this.categoryLevel3Name = categoryLevel3Name;
+	}
+	public Info(BigInteger id, String softwareName, String aPKName,
+			String supportROM, String interfaceLanguage, String softwareSize,
+			Date updateDate, BigInteger devId, String appInfo,
+			BigInteger status, Date onSaleDate, Date offSaleDate,
+			BigInteger flatformId, BigInteger categoryLevel3,
+			BigInteger downloads, BigInteger createdBy, Date creationDate,
+			BigInteger modifyBy, Date modifyDate, BigInteger categoryLevel1,
+			BigInteger categoryLevel2, String logoPicPath, String logoLocPath,
+			BigInteger versionId, DataDictionary dataDictionary,
+			Category category, String versionNo, String valueName,
+			String flatformName, String statusName, String categoryName,
+			String categoryLevel1Name, String categoryLevel2Name,
+			String categoryLevel3Name) {
+		super();
+		this.id = id;
+		this.softwareName = softwareName;
+		APKName = aPKName;
+		this.supportROM = supportROM;
+		this.interfaceLanguage = interfaceLanguage;
+		this.softwareSize = softwareSize;
+		this.updateDate = updateDate;
+		this.devId = devId;
+		this.appInfo = appInfo;
+		this.status = status;
+		this.onSaleDate = onSaleDate;
+		this.offSaleDate = offSaleDate;
+		this.flatformId = flatformId;
+		this.categoryLevel3 = categoryLevel3;
+		this.downloads = downloads;
+		this.createdBy = createdBy;
+		this.creationDate = creationDate;
+		this.modifyBy = modifyBy;
+		this.modifyDate = modifyDate;
+		this.categoryLevel1 = categoryLevel1;
+		this.categoryLevel2 = categoryLevel2;
+		this.logoPicPath = logoPicPath;
+		this.logoLocPath = logoLocPath;
+		this.versionId = versionId;
+		this.dataDictionary = dataDictionary;
+		this.category = category;
+		this.versionNo = versionNo;
+		this.valueName = valueName;
+		this.flatformName = flatformName;
+		this.statusName = statusName;
+		this.categoryName = categoryName;
+		this.categoryLevel1Name = categoryLevel1Name;
+		this.categoryLevel2Name = categoryLevel2Name;
+		this.categoryLevel3Name = categoryLevel3Name;
+	}
+
+	
+	
 	
 }

@@ -8,7 +8,7 @@ import cn.appinfodb.pojo.Category;
 
 public interface CategoryMapper {
 
-<<<<<<< HEAD
+
 	
 	public List<Category> selectCate1(@Param("categoryLevel1")int categoryLevel1);
 	public List<Category> selectCate2(@Param("categoryLevel2")int categoryLevel2);
@@ -19,11 +19,11 @@ public interface CategoryMapper {
 	public List<Category> selectCa3();
 	
 	
-=======
+
 	public List<Category>getCategoryOne();
 	
 	public List<Category>getCategoryTow(int firstListId);
 	
 	public List<Category>getCategoryThree(int secoundlistId);
->>>>>>> 3465bee2703f1a203b4291b61f51e9d33789ddae
+
 }

@@ -11,7 +11,7 @@ import cn.appinfodb.pojo.Category;
 public class CategoryServiceImpl implements CategoryService {
 	@Autowired
 	CategoryMapper categoryMapper;
-<<<<<<< HEAD
+
 
 	@Override
 	public List<Category> selectCate1(int categoryLevel1) {
@@ -46,8 +46,7 @@ public class CategoryServiceImpl implements CategoryService {
 		return categoryMapper.selectCa3();
 	}
 	
-=======
-	
+
 	
 	public void setCategoryMapper(CategoryMapper categoryMapper) {
 		this.categoryMapper = categoryMapper;
@@ -73,6 +72,5 @@ public class CategoryServiceImpl implements CategoryService {
 		// TODO Auto-generated method stub
 		return categoryMapper.getCategoryThree(secoundlistId);
 	}
->>>>>>> 3465bee2703f1a203b4291b61f51e9d33789ddae
 
 }
